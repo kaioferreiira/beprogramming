@@ -11,8 +11,6 @@ import org.springframework.util.backoff.FixedBackOff;
 @Configuration
 public class KafkaErroHandlerConfig {
 
-	//TODO: DEPRECATED NEW VERSION 2.8.0
-
 	@Bean
 	public SeekToCurrentErrorHandler errorHandler(KafkaOperations<Object, Object> template) {
 		return new SeekToCurrentErrorHandler(
