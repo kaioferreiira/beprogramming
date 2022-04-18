@@ -1,0 +1,31 @@
+#
+#spring:
+#  kafka:
+#    bootstrap-servers: localhost:9092
+#
+#    producer:
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+#      acks: all
+#      retries: 3
+#
+#    consumer:
+#      #value-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
+#      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+#      group-id: grupo-1
+#      auto-offset-reset: earliest
+#
+##app:
+##  kafka:
+##
+##    consumer:
+##      topic:
+##        name: topico-1
+##        particoes: 3
+##        replicas: 3
+##        retry:
+##          attempts: 2
+##          backoff:
+##            delay: 2000
+##            max-delay: 10000
+##            multiplier: 2
